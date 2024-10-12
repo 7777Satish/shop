@@ -1,0 +1,108 @@
+@media only screen and (max-width: 767px) {
+    header .text{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+        z-index: 1;
+    }
+    header .text h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 3.5em;
+        font-weight: 600;
+        color: rgb(239, 239, 239);
+        width: 80vw;
+    }
+    header .text p {
+        width: 80vw;
+        font-size: 1.4em;
+        color: rgb(182, 182, 182);
+        margin: 20px 0;
+    }
+    header .text .buttons {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+        width: 80vw;
+        margin-top: 30px;
+    }
+    header .text .buttons button {
+        width: 70%;
+        padding: 10px 5px;
+        font-size: 1.3em;
+        margin: 0 7px;
+        border: 1.5px solid rgb(239, 239, 239);
+        color: rgb(239, 239, 239);
+        outline: none;
+        border-radius: 25px;
+        background: transparent;
+        font-family: 'poppins', sans-serif;
+        font-weight: 500;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    header .image{
+        display: none;
+    }
+
+
+    .arrivals .buttons_div .buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+        width: 80vw;
+    }
+    .arrivals .buttons_div .buttons button{
+        width: 70%;
+        padding: 10px 5px;
+        font-size: 1.3em;
+        margin: 0 7px;
+        outline: none;
+        border-radius: 25px;
+        font-family: 'poppins', sans-serif;
+        font-weight: 500;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+
+    .banner .bottom .cards{
+        width: 100%;
+        grid-gap: 50px;
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .banner .bottom .cards{
+        width: 100%;
+        grid-gap: 20px;
+    }
+}
+
+
+
+/* Very small screen */
+@media only screen and (max-width: 250px) {
+    header .text h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.3em;
+        font-weight: 600;
+        color: rgb(239, 239, 239);
+        width: 95vw;
+    }
+    header .text p {
+        width: 90vw;
+        font-size: 1em;
+        color: rgb(182, 182, 182);
+        margin: 20px 0;
+    }
+}

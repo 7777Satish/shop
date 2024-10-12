@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Booots</title>
+    <link rel="icon" href="/images/favicon.ico.png" type="image/x-icon">
+
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montez&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/small-style.css" />
+    <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/card.css" />
+
+    <script src="/js/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+        <%- include('partials/nav') %>
+      <div class="text">
+        <h1>Design & High Quality</h1>
+        <p>
+          Everything from design to quality is extremely good and high-quality
+        </p>
+        <div class="buttons">
+          <button class="first">Open Store</button>
+          <button>Explore More</button>
+        </div>
+      </div>
+      <div class="image">
+        <img
+          src="images/header_shoes.png"
+          alt=""
+        />
+      </div>
+    </header>
+    <!--
+    <section class="categories_container">
+      <div class="categories">
+      <div class="top">
+        <div class="category_card"><span>Men</span><img src="images/man.jpeg" alt=""></div>
+        <div class="category_card"><span>Women</span><img src="images/women.webp" alt=""></div>
+        <div class="category_card"><span>Kids</span><img src="images/kid.jpeg" alt=""></div>
+        <div class="category_card"><span>Sports</span><img src="images/sports.webp" alt=""></div>
+        <div class="category_card"><span>Fashion</span><img src="images/fashion.webp" alt=""></div>
+      </div>
+      <div class="bottom"><span>All Categories</span></div>
+      </div>
+    </section>
+  -->
+    <section class="arrivals_container">
+        <div class="arrivals">
+        <div class="top">
+            <div class="left">
+                <h2>New Arrivals</h2>
+            </div>
+            <div class="right">
+                <span>All products</span>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <div class="bottom">
+            <% for(var i=1;i<=8;i++){ %>
+                <%- include('partials/card',{'i':Math.floor(Math.random()*4+1)})%>
+            <% } %>
+        </div>
+        <div class="buttons_div">
+          <div class="buttons">
+            <button class="first">Open Store</button>
+            <button>Explore More</button>
+          </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="banner_container"  id="banner_container">
+      <div class="banner">
+        <div class="top"><h2>Featured</h2></div>
+        <div class="bottom">
+          <div class="cards">
+            <%- include('partials/card',{i:1}) %>
+            <%- include('partials/card',{i:2}) %>
+            <%- include('partials/card',{i:3}) %>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <%- include('partials/footer') %>
+
+
+  </body>
+</html>

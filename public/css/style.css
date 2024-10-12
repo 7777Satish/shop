@@ -1,0 +1,301 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 7px;
+    background: #111;
+}
+::-webkit-scrollbar-thumb{
+    background: cyan;
+    border-radius: 10px;
+}
+:root {
+  --header_img_x: 0px;
+  --header_img_y: 0px;
+  --header_img_rotate: 0deg;
+  --nav_background: transparent;
+  --banner_bg_y: -10px;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+
+.nav ul li:nth-child(1) a {
+  color: rgb(226, 226, 226);
+  font-weight: bold;
+}
+
+header {
+  box-shadow: inset 0 0 50px rgba(0, 100, 207, 0.1);
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: #111;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+header .text {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  z-index: 1;
+}
+header .text h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4.9em;
+  font-weight: 600;
+  color: rgb(239, 239, 239);
+  min-width: 90%;
+}
+header .text p {
+  width: 450px;
+  font-size: large;
+  color: rgb(182, 182, 182);
+  margin: 20px 0;
+}
+header .text .buttons {
+  margin-top: 10px;
+}
+header .text .buttons .first {
+  background: #00c896;
+  border: 1.5px solid #00c896;
+  color: #222;
+  box-shadow: 190px -120px 100px 10px rgb(0, 200, 150, 0.5),
+    -100px 50px 100px 10px rgb(0, 198, 207, 0.5),
+    -50px -250px 100px 10px rgb(0, 200, 150, 0.5);
+}
+header .text .buttons button {
+  width: 140px;
+  padding: 10px 5px;
+  font-size: medium;
+  margin: 0 7px;
+  border: 1.5px solid rgb(239, 239, 239);
+  color: rgb(239, 239, 239);
+  outline: none;
+  border-radius: 25px;
+  background: transparent;
+  font-family: 'poppins', sans-serif;
+  font-weight: 500;
+  transition: 0.5s;
+  cursor: pointer;
+}
+header .text .buttons button:hover {
+  background: rgb(239, 239, 239);
+  color: #222;
+  border: 1.5px solid rgb(239, 239, 239);
+}
+header .image {
+  position: absolute;
+  bottom: 0;
+  width: max-content;
+  filter: blur(0.3px) brightness(0.7);
+  transform: translate(var(--header_img_x), var(--header_img_y))
+    rotate(var(--header_img_rotate));
+  transition: 0.2s;
+}
+header .image img {
+  height: 80vh;
+  width: auto;
+}
+.arrivals_container{
+    background: #eee;
+}
+.arrivals {
+    width: 80vw;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+.arrivals .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    font-family: 'Poppins', sans-serif;
+    color: #111;
+}
+.arrivals .top h2{
+    font-size: 2.5em;
+    font-weight: 500;
+}
+.arrivals .top span{
+    cursor: pointer;
+}
+.arrivals .bottom{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    justify-items: center;
+    grid-gap: 40px;
+    padding: 50px 0;
+}
+.arrivals .buttons_div{
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrivals .buttons_div .buttons{
+  margin-top: 10px;
+}
+.arrivals .buttons_div .buttons .first {
+  background: #00c896;
+  border: 1.5px solid #00c896;
+  color: #222;
+  box-shadow: 190px -120px 100px 10px rgb(0, 200, 150, 0.5),
+    -100px 50px 100px 10px rgb(0, 198, 207, 0.5),
+    -50px -250px 100px 10px rgb(0, 200, 150, 0.5);
+}
+.arrivals .buttons_div .buttons button {
+  width: 140px;
+  padding: 10px 5px;
+  font-size: medium;
+  margin: 0 7px;
+  border: 1.5px solid #222;
+  color: #222;
+  outline: none;
+  border-radius: 25px;
+  background: transparent;
+  font-family: 'poppins', sans-serif;
+  font-weight: 500;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.arrivals .buttons_div .buttons button:hover {
+  background: #222;
+  color: rgb(239, 239, 239);
+  border: 1.5px solid #222;
+}
+
+.categories_container{
+  background: linear-gradient(-45deg,#ccc,#fff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.categories{
+  width: 90vw;
+  margin: auto;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: unset;
+}
+.categories .bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #111;
+}
+.categories .bottom span{
+    cursor: pointer;
+    transition: 0.5;
+}
+.categories .bottom span:hover{
+  color: #00c896;
+}
+.categories .top{
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  justify-items: center;
+  justify-content: center;
+  grid-gap: 30px;
+  margin: 0;
+}
+.categories .top .category_card{
+  position: relative;
+  width: 120px;
+  height: 120px;
+  font-size: larger;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  background: #00c896;
+  color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+}
+.categories .top .category_card span{
+  z-index: 2;
+}
+.categories .top .category_card img{
+  position: absolute;
+  height: 100%;
+  width: auto;
+  filter: brightness(0.7) blur(0.5px);
+  transition: 0.3s ease-in-out;
+}
+.categories .top .category_card:hover img{
+  height: 120%;
+}
+
+
+
+
+.banner_container{
+  /* background: linear-gradient(to bottom right, #0e1929,#0e1929,#a9b2b3); */
+  background: url('/images/banner_bg.svg');
+  background-position: 0 var(--banner_bg_y);
+  box-shadow: inset 0 0 50px rgba(243, 243, 243, 0.2);
+}
+.banner {
+  width: 80vw;
+  margin: auto;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+}
+.banner .top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  font-family: 'Poppins', sans-serif;
+  color: #111;
+  margin-bottom: 20px;
+}
+.banner .top h2{
+  font-size: 2.5em;
+  font-weight: 500;
+  color: rgb(239, 239, 239);
+}
+.banner .bottom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner .bottom .cards{
+  width: 90%;
+  height: 80%;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  padding-bottom: 20px;
+}
+.banner .bottom .cards .card{
+  background: #eee;
+  padding: 25px 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 50px rgba(180,180,180,0.5);
+}
+
+
