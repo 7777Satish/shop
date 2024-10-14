@@ -27,13 +27,42 @@ body {
 .header_container header{
     font-family: 'Montserrat', sans-serif;
     width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header_container header span{
+    font-weight: bold;
 }
 .header_container header h1{
-    font-size: xxx-large;
+    font-size: 4em;
+    color: #1d1d1d;
+    font-family: "Protest Strike", sans-serif;
 }
 .header_container header p{
-    width: 70%;
+    /* width: 70%; */
     font-size: large;
+    font-family: 'poppins', sans-serif;
+    color: #363636;
+}
+.header_container header button{
+    width: 140px;
+    padding: 10px 5px;
+    font-size: medium;
+    border: 1.5px solid #222;
+    color: #222;
+    outline: none;
+    border-radius: 25px;
+    background: transparent;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.header_container header button:hover{
+    background: #222;
+    color: rgb(239, 239, 239);
+    border: 1.5px solid #222;
 }
 
 .store_container {
