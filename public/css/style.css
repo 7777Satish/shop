@@ -22,7 +22,9 @@ body {
   width: 100vw;
   overflow-x: hidden;
 }
-
+a{
+  text-decoration: none;
+}
 
 .nav ul li:nth-child(1) a {
   color: rgb(226, 226, 226);

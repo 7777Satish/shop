@@ -5,7 +5,10 @@
 }
 
 :root{
-    --nav_background: #111;
+    --nav_background: #22202b;
+}
+html{
+    scroll-behavior: smooth;
 }
 body {
   width: 100vw;
@@ -13,16 +16,44 @@ body {
 }
 
 
+::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+    background: #111;
+}
+::-webkit-scrollbar-thumb{
+    background: cyan;
+    border-radius: 10px;
+}
+
+.store_container::-webkit-scrollbar-thumb{
+    background: cyan;
+    border-radius: 0px;
+}
+
 .nav ul li:nth-child(2) a {
     color: rgb(226, 226, 226);
     font-weight: bold;
 }
 
 .header_container{
-    padding: 130px 0 70px 0;
+    padding: 90px 0 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header_container .img{
+    width: 90vw;
+    height: 300px;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
+}
+.header_container .img img{
+    width: 100%;
 }
 .header_container header{
     font-family: 'Montserrat', sans-serif;
@@ -38,12 +69,14 @@ body {
     font-size: 4em;
     color: #1d1d1d;
     font-family: "Protest Strike", sans-serif;
+    text-align: center;
 }
 .header_container header p{
     /* width: 70%; */
     font-size: large;
     font-family: 'poppins', sans-serif;
     color: #363636;
+    text-align: center;
 }
 .header_container header button{
     width: 140px;
@@ -68,15 +101,19 @@ body {
 .store_container {
     width: 80vw;
     margin: auto;
-    padding: 100px 50px 100px 50px;
+    padding: 30px 20px 30px 20px;
     display: flex;
     flex-direction: column;
     background: #eee;
     margin-bottom: 100px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
 }
 .store_container .bottom{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(10, minmax(200px, 1fr));
     justify-items: center;
     grid-gap: 40px;
+    scroll-snap-align: center;
 }
