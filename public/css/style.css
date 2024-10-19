@@ -146,6 +146,10 @@ header .image img {
     grid-gap: 40px;
     padding: 50px 0;
 }
+
+
+
+
 .arrivals .buttons_div{
   padding: 50px 0;
   display: flex;
@@ -155,9 +159,12 @@ header .image img {
 .arrivals .buttons_div .buttons{
   margin-top: 10px;
 }
-.arrivals .buttons_div .buttons .first {
+.arrivals .buttons_div .buttons a {
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .arrivals .buttons_div .buttons .first {
   background: #00c896;
