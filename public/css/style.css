@@ -69,6 +69,10 @@ header .text p {
 header .text .buttons {
   margin-top: 10px;
 }
+header .text .buttons a{
+  width: 100%;
+  height: 100%;
+}
 header .text .buttons .first {
   background: #00c896;
   border: 1.5px solid #00c896;
@@ -150,6 +154,10 @@ header .image img {
 }
 .arrivals .buttons_div .buttons{
   margin-top: 10px;
+}
+.arrivals .buttons_div .buttons .first {
+  width: 100%;
+  height: 100%;
 }
 .arrivals .buttons_div .buttons .first {
   background: #00c896;

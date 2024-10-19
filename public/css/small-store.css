@@ -1,4 +1,11 @@
 @media only screen and (max-width: 767px) {
+    .header_container .img{
+        height: auto;
+        margin-bottom: 30px;
+    }
+    .header_container header h1 {
+        font-size: 3em;
+    }
     .header_container header p {
         width: 90%;
         font-size: large;

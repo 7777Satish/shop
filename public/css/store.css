@@ -117,3 +117,9 @@ body {
     grid-gap: 40px;
     scroll-snap-align: center;
 }
+.store_container .bottom:first-child{
+    margin-left: 20px;
+}
+.store_container .bottom:last-child{
+    margin-right: 20px;
+}
