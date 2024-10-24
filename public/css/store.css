@@ -98,28 +98,74 @@ body {
     border: 1.5px solid #222;
 }
 
-.store_container {
+
+.store_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 80vw;
     margin: auto;
-    padding: 30px 20px 30px 20px;
+    gap: 20px;
+}
+
+.store_container .buttons{
+    align-self: flex-end;
+    display: flex;
+    gap: 15px;
+}
+
+.store_container .buttons button{
+    width: 60px;
+    height: 60px;
+    outline: none;
+    border: 1px solid #111;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.store_container .buttons button:disabled{
+    border: 1px solid #aaaaaa;
+    color: #aaa !important;
+}
+
+.store_container .buttons button span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.store_container .scroll_container {
+    width: 100%;
+    margin: auto;
+    padding: 20px 20px 20px 20px;
     display: flex;
     flex-direction: column;
     background: #eee;
     margin-bottom: 100px;
-    overflow-x: scroll;
+    /* overflow-x: scroll;
     overflow-y: hidden;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory; */
 }
-.store_container .bottom{
+.store_container .scroll_container .bottom{
     display: grid;
     grid-template-columns: repeat(10, minmax(200px, 1fr));
     justify-items: center;
     grid-gap: 40px;
-    scroll-snap-align: center;
+    padding-bottom: 30px;
+    /* overflow-x: scroll; */
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
 }
-.store_container .bottom:first-child{
+.store_container .scroll_container .bottom .card{
+    scroll-snap-align: left;
+}
+/* .store_container .scroll_container .bottom:first-child{
     margin-left: 20px;
 }
-.store_container .bottom:last-child{
+.store_container .scroll_container .bottom:last-child{
     margin-right: 20px;
-}
+} */

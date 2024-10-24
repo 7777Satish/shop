@@ -12,7 +12,7 @@
     }
     
     
-    .store_container {
+    .store_container .scroll_container {
         width: 80vw;
         margin: auto;
         padding: 40px 0;
@@ -20,5 +20,8 @@
         flex-direction: column;
         background: #eee;
         margin-bottom: 100px;
+    }
+    .store_container .scroll_container .bottom .card{
+        scroll-snap-align: center;
     }
 }
