@@ -124,31 +124,43 @@ body {
     gap: 20px;
 }
 
-.store_container .buttons{
-    align-self: flex-end;
+.store_container .first{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.store_container .first h2{
+    font-family: 'Poppins', sans-serif;
+    color: #3d3d3d;
+}
+
+.store_container .first .buttons{
     display: flex;
     gap: 15px;
 }
 
-.store_container .buttons button{
-    width: 60px;
-    height: 60px;
+.store_container .first .buttons button{
+    width: 50px;
+    height: 50px;
     outline: none;
-    border: 1px solid #111;
+    border: 1px solid #3d3d3d;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #ffffff;
     cursor: pointer;
+    transition: 0.5s;
 }
 
-.store_container .buttons button:disabled{
+.store_container .first .buttons button:disabled{
     border: 1px solid #aaaaaa;
     color: #aaa !important;
 }
 
-.store_container .buttons button span{
+.store_container.first .buttons button span{
     display: flex;
     align-items: center;
     justify-content: center;
