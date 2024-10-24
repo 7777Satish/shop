@@ -1,3 +1,4 @@
+/* Reset styles */
 *{
     margin: 0;
     padding: 0;
@@ -7,15 +8,18 @@
 :root{
     --nav_background: #22202b;
 }
+
 html{
     scroll-behavior: smooth;
 }
+
 body {
   width: 100vw;
   overflow-x: hidden;
 }
 
 
+/* Scrollbar styling */
 ::-webkit-scrollbar{
     width: 7px;
     height: 7px;
@@ -31,11 +35,13 @@ body {
     border-radius: 0px;
 }
 
+/* Navigation styles */
 .nav ul li:nth-child(2) a {
     color: rgb(226, 226, 226);
     font-weight: bold;
 }
 
+/* Header section */
 .header_container{
     padding: 90px 0 70px 0;
     display: flex;
@@ -43,6 +49,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .header_container .img{
     width: 90vw;
     height: 300px;
@@ -52,9 +59,11 @@ body {
     justify-content: center;
     margin-bottom: 50px;
 }
+
 .header_container .img img{
     width: 100%;
 }
+
 .header_container header{
     font-family: 'Montserrat', sans-serif;
     width: 80vw;
@@ -62,15 +71,18 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 .header_container header span{
     font-weight: bold;
 }
+
 .header_container header h1{
     font-size: 4em;
     color: #1d1d1d;
     font-family: "Protest Strike", sans-serif;
     text-align: center;
 }
+
 .header_container header p{
     /* width: 70%; */
     font-size: large;
@@ -78,6 +90,7 @@ body {
     color: #363636;
     text-align: center;
 }
+
 .header_container header button{
     width: 140px;
     padding: 10px 5px;
@@ -92,6 +105,7 @@ body {
     transition: 0.5s;
     cursor: pointer;
 }
+
 .header_container header button:hover{
     background: #222;
     color: rgb(239, 239, 239);
@@ -99,6 +113,7 @@ body {
 }
 
 
+/* Store section */
 .store_container{
     display: flex;
     flex-direction: column;
@@ -138,6 +153,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .store_container .scroll_container {
     width: 100%;
     margin: auto;
@@ -146,10 +162,8 @@ body {
     flex-direction: column;
     background: #eee;
     margin-bottom: 100px;
-    /* overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory; */
 }
+
 .store_container .scroll_container .bottom{
     display: grid;
     grid-template-columns: repeat(10, minmax(200px, 1fr));
@@ -160,12 +174,7 @@ body {
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
 }
+
 .store_container .scroll_container .bottom .card{
     scroll-snap-align: left;
 }
-/* .store_container .scroll_container .bottom:first-child{
-    margin-left: 20px;
-}
-.store_container .scroll_container .bottom:last-child{
-    margin-right: 20px;
-} */
