@@ -5,6 +5,9 @@ const path = require('path');
 const home = require('./routes/home');
 const store = require('./routes/store');
 const about = require('./routes/about');
+const login = require('./routes/login');
+const signup = require('./routes/register');
+const { register } = require('module');
 
 const app = express();
 
@@ -28,6 +31,8 @@ app.use(
 app.use('/', home);
 app.use('/store', store);
 app.use('/about', about);
+app.use('/login', login);
+app.use('/signup', signup);
 
 app.listen(8000, () => {
   console.log('Listening at PORT 8000');

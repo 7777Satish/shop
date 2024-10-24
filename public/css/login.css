@@ -1,0 +1,208 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+
+:root{
+    --nav_background: #22202b;
+}
+
+
+/* Nav */
+.nav{
+    position: relative !important;
+}
+
+/* Login container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #f4f4f4;
+    height: 90vh;
+}
+
+.login-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #222;
+}
+
+/* Input fields */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.input-group input:focus {
+    border-color: #222;
+    outline: none;
+}
+
+/* Remember me */
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 14px;
+}
+
+.remember-me input {
+    margin-right: 10px;
+    width: auto;
+}
+
+.remember-me label{
+    margin-bottom: 0;
+}
+
+/* Login button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #222;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #444;
+}
+
+/* Links */
+.login-links {
+    margin-top: 15px;
+}
+
+.login-links a {
+    color: #222;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-links a:hover {
+    color: #555;
+}
+
+.login-links p {
+    margin-top: 10px;
+}
+
+
+/* Media Queries */
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        padding-top: 40px;
+    }
+
+    .login-box {
+        padding: 30px;
+    }
+
+    .login-box h2 {
+        font-size: 22px;
+    }
+
+    .input-group input {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .login-btn {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .login-links a {
+        font-size: 13px;
+    }
+
+    .login-links p {
+        font-size: 13px;
+    }
+}
+
+/* Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+    body {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .login-box {
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .login-box h2 {
+        font-size: 20px;
+    }
+
+    .input-group label {
+        font-size: 14px;
+    }
+
+    .input-group input {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .remember-me {
+        font-size: 12px;
+    }
+
+    .login-btn {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .login-links a {
+        font-size: 12px;
+    }
+
+    .login-links p {
+        font-size: 12px;
+    }
+}
