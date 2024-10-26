@@ -35,8 +35,6 @@
     <link rel="stylesheet" href="/css/footer.css" />
     <link rel="stylesheet" href="/css/card.css" />
 
-    <!-- Javascript Files -->
-    <script src="/js/store.js" defer></script>
 </head>
 <body>
 
@@ -64,12 +62,12 @@
         <h2>Trending this week</h2>
         <div class="buttons">
           <div class="buttons">
-            <button id="scroll-left">
+            <button class="scroll-left">
               <span class="material-symbols-outlined">
                 arrow_back_ios
                 </span>
             </button>
-            <button id="scroll-right">
+            <button class="scroll-right">
               <span class="material-symbols-outlined">
               arrow_forward_ios
               </span>
@@ -89,9 +87,44 @@
     </div>
     
 
+
+
+
+    <div class="store_container store_container2">
+      <div class="first">
+        <h2>Latest Articles</h2>
+        <div class="buttons">
+          <div class="buttons">
+            <button class="scroll-left">
+              <span class="material-symbols-outlined">
+                arrow_back_ios
+                </span>
+            </button>
+            <button class="scroll-right">
+              <span class="material-symbols-outlined">
+              arrow_forward_ios
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll_container">
+        <div class="bottom" id="scroll_container">
+          <% for(var i=1;i<=7;i++){ %>
+              <%- include('partials/card',{'i':Math.floor(Math.random()*4+1)})%>
+          <% } %>
+        </div>
+      </div>
+      
+    </div>
     <!-- Footer Section -->
     <footer class="footer_container">
         <%- include('./partials/footer') %>
     </footer>
+
+    
+    <!-- Javascript Files -->
+    <script src="/js/store.js"></script>
 </body>
 </html>

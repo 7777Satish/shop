@@ -178,15 +178,19 @@ body {
 
 .store_container .scroll_container .bottom{
     display: grid;
-    grid-template-columns: repeat(10, minmax(200px, 1fr));
+    grid-template-columns: repeat(10, minmax(230px, 1fr));
     justify-items: center;
     grid-gap: 40px;
     padding-bottom: 30px;
-    /* overflow-x: scroll; */
+    height: 300px;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
 }
 
 .store_container .scroll_container .bottom .card{
     scroll-snap-align: left;
+}
+
+.store_container2 .scroll_container .bottom{
+    grid-template-columns: repeat(7, minmax(230px, 1fr)) !important;
 }

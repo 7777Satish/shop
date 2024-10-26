@@ -24,6 +24,9 @@
 .nav{
     position: relative !important;
 }
+.nav h1{
+    margin-bottom: 0;
+}
 
 
 
@@ -149,6 +152,7 @@ button:disabled {
 @media (max-width: 480px) {
     .form-container {
         padding: 20px;
+        box-shadow: none;
     }
 
     h1 {
@@ -161,5 +165,8 @@ button:disabled {
 
     button {
         font-size: 14px;
+    }
+    .body{
+        padding: 0;
     }
 }
