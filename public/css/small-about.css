@@ -1,4 +1,19 @@
 @media only screen and (max-width: 767px) {
+    /* Header */
+    .header_container{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .header_container .left{
+        padding-left: 40px;
+    }
+
+    .header_container .left h1{
+        width: 90%;
+    }
+
     .header_container .left .buttons{
         display: flex;
         flex-direction: column;
@@ -7,6 +22,7 @@
         height: 120px;
         width: 80vw;
     }
+
     .header_container .left .buttons button{
         width: 70%;
         padding: 10px 5px;
@@ -18,5 +34,22 @@
         font-weight: 500;
         transition: 0.5s;
         cursor: pointer;
+    }
+
+    .header_container .right{
+        padding-left: 40px;
+        width: 100%;
+
+    }
+
+    /* About */
+    .about .bottom{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Stats */
+    .stats{
+        flex-direction: column;
     }
 }
