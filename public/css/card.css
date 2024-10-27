@@ -56,3 +56,6 @@
 .card .details .bottom .left{
     font-size: small;
 }
+.card .details .bottom .cart{
+    cursor: pointer;
+}

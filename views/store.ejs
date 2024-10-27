@@ -34,7 +34,10 @@
     <link rel="stylesheet" href="/css/nav.css" />
     <link rel="stylesheet" href="/css/footer.css" />
     <link rel="stylesheet" href="/css/card.css" />
+    <link rel="stylesheet" href="/css/card2.css" />
 
+    <!-- Javascript Files -->
+    <script src="/js/store.js" defer></script>
 </head>
 <body>
 
@@ -56,7 +59,7 @@
     </div>
 
 
-    <!-- Store Section -->
+    <!-- Trending Section -->
     <div class="store_container">
       <div class="first">
         <h2>Trending this week</h2>
@@ -86,10 +89,7 @@
       
     </div>
     
-
-
-
-
+    <!-- Latest Articles -->
     <div class="store_container store_container2">
       <div class="first">
         <h2>Latest Articles</h2>
@@ -118,13 +118,53 @@
       </div>
       
     </div>
+
+
+    <!-- All Products -->
+    <div class="all_products">
+      <div class="top">
+        <h2>All Products</h2>
+        <div class="dropdown">
+          <button class="dropdown-button">
+            Sort By <i class="arrow"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Price: Low to High</a>
+            <a href="#">Price: High to Low</a>
+            <a href="#">By Rating</a>
+          </div>
+        </div>
+      </div>
+      <div class="products">
+        <% for(var i=1;i<=6;i++){ %>
+          <%- include('partials/card2',{'i':Math.floor(Math.random()*4+1)})%>
+      <% } %>
+      </div>
+      <div class="bottom">
+        <div class="buttons">
+          <button>
+            <span class="material-symbols-outlined">
+              arrow_back_ios
+              </span>
+          </button>
+          <button class="active_btn">1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>
+            <span class="material-symbols-outlined">
+              arrow_forward_ios
+              </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
     <!-- Footer Section -->
     <footer class="footer_container">
         <%- include('./partials/footer') %>
     </footer>
 
     
-    <!-- Javascript Files -->
-    <script src="/js/store.js"></script>
 </body>
 </html>
