@@ -173,7 +173,7 @@ body {
     display: flex;
     flex-direction: column;
     background: #eee;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 .store_container .scroll_container .bottom{
@@ -202,6 +202,7 @@ body {
     grid-template-rows: 50px 1fr 50px;
     width: 80vw;
     margin: auto;
+    padding-top: 30px;
     margin-bottom: 100px;
     gap: 40px;
 }
@@ -215,6 +216,7 @@ body {
 
 .all_products .top h2{
     font-family: 'Poppins', sans-serif;
+    color: #222222;
 }
 
 .all_products .products{
@@ -248,6 +250,12 @@ body {
     background: #ffffff;
     color: #3d3d3d;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.all_products .bottom .buttons button:hover{
+    background: #111111;
+    color: #eee;
 }
 
 .all_products .bottom .buttons .active_btn{
@@ -286,7 +294,7 @@ body {
 .all_products .top .dropdown-content {
     display: none;
     position: absolute;
-    /* background-color: #f9f9f9; */
+    right: 0;
     font-family: 'Poppins', sans-serif;
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
