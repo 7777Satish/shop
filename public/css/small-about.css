@@ -1,0 +1,22 @@
+@media only screen and (max-width: 767px) {
+    .header_container .left .buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+        width: 80vw;
+    }
+    .header_container .left .buttons button{
+        width: 70%;
+        padding: 10px 5px;
+        font-size: 1.3em;
+        margin: 0 7px;
+        outline: none;
+        border-radius: 25px;
+        font-family: 'poppins', sans-serif;
+        font-weight: 500;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+}

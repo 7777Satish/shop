@@ -114,9 +114,12 @@ header .image img {
   height: 80vh;
   width: auto;
 }
+
+/* New Arrivals */
 .arrivals_container{
     background: #eee;
 }
+
 .arrivals {
     width: 80vw;
     margin: auto;
@@ -124,6 +127,7 @@ header .image img {
     display: flex;
     flex-direction: column;
 }
+
 .arrivals .top{
     display: flex;
     justify-content: space-between;
@@ -132,6 +136,7 @@ header .image img {
     font-family: 'Poppins', sans-serif;
     color: #111;
 }
+
 .arrivals .top h2{
     font-size: 2.5em;
     font-weight: 500;
@@ -146,54 +151,6 @@ header .image img {
     justify-items: center;
     padding: 50px 0;
 }
-
-
-
-
-/* .arrivals .buttons_div{
-  padding: 50px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.arrivals .buttons_div .buttons{
-  margin-top: 10px;
-}
-.arrivals .buttons_div .buttons a {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.arrivals .buttons_div .buttons .first {
-  background: #00c896;
-  border: 1.5px solid #00c896;
-  color: #222;
-  box-shadow: 190px -120px 100px 10px rgb(0, 200, 150, 0.5),
-    -100px 50px 100px 10px rgb(0, 198, 207, 0.5),
-    -50px -250px 100px 10px rgb(0, 200, 150, 0.5);
-}
-.arrivals .buttons_div .buttons button {
-  width: 140px;
-  padding: 10px 5px;
-  font-size: medium;
-  margin: 0 7px;
-  border: 1.5px solid #222;
-  color: #222;
-  background: transparent;
-  outline: none;
-  border-radius: 25px;
-  font-family: 'poppins', sans-serif;
-  font-weight: 500;
-  transition: 0.5s;
-  cursor: pointer;
-}
-.arrivals .buttons_div .buttons button:hover {
-  background: #222;
-  color: rgb(239, 239, 239);
-  border: 1.5px solid #222;
-} */
 
 
 .arrivals .buttons_div {

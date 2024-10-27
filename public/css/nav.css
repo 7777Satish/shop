@@ -24,7 +24,7 @@
 .nav ul {
   display: flex;
   align-items: center;
-  color: rgb(167, 167, 167);
+  color: rgb(185, 185, 185);
 }
 .active_nav {
   color: rgb(226, 226, 226);

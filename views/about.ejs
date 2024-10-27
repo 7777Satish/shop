@@ -25,20 +25,116 @@
     />
 
     <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="/css/small-about.css" />
     <link rel="stylesheet" href="/css/nav.css" />
     <link rel="stylesheet" href="/css/footer.css" />
     <link rel="stylesheet" href="/css/card.css" />
 
 </head>
 <body>
+    <!-- Nav -->
     <%- include('./partials/nav') %>
+    
+    <!-- Header -->
     <div class="header_container">
-      <header>
-        <h1>Get inspired</h1>
+      <div class="left">
+        <h1>Where Every Step Shines</h1>
         <br>
         <p>Discover the latest in stylish and comfortable footwear. From casual sneakers to elegant heels, step up your shoe game with our curated collection designed to elevate every outfit.</p>
-      </header>
+        
+        <div class="buttons">
+          <a href="/store"><button class="first">Open Store</button></a>
+          <a href="/contact"><button>Contact Us</button></a>
+        </div>
+      </div>
+      <div class="right">
+        <h2>Why Choose Us</h2>
+        <div class="cards">
+          <div class="card">
+            <div class="img">
+              <img src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/07/construction-icon-7-yellow.png" alt="">
+            </div>
+            <div class="text">
+              <h3>Best Quality</h3>
+              <p>We challenge the industry standards</p>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="img">
+              <img src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/07/construction-icon-5-yellow-1.png" alt="">
+            </div>
+            <div class="text">
+              <h3>Fast Delivery</h3>
+              <p>Delivered to your door in 1 hour</p>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="img">
+              <img src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/07/construction-icon-6-yellow.png" alt="">
+            </div>
+            <div class="text">
+              <h3>Easy Returns</h3>
+              <p>No questions asked refund policy</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- About -->
+    <div class="about">
+      <div class="top">
+        <h1>About Our Store</h1>
+        <span></span>
+      </div>
+      <div class="bottom">
+        <div class="left">
+          Lectus erat, consectetur eu sapien eget rhoncus consectetur sem. Proin cursus, dolor a mollis consectetur, risus dolor fermentum massa, a commodo elit dui sit amet risus. Maecenas ornare nisl a tortor ultrices bibendum. Nulla fermentum, metus quis sodales tristique, augue mauris molestie augue, non feugiat ligula neque nec felis.
+          <br><br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed nibh dignissim, cursus tellus sit amet, ultrices mauris. Aliquam blandit est in eros elementum, quis vehicula est suscipit.
+        </div>
+        <div class="right">
+          Lorem ipsum dolor sit consectetur adipiscing elit. Nullam lectus erat, consectetur eu sapien eget rhoncus consectetur sem.
+          <br><br>
+          Proin cursus, dolor a mollis consectetur, risus dolor fermentum massa, a commodo elit dui sit amet risus. Maecenas ornare nisl a tortor ultrices bibendum. Nulla fermentum, metus quis sodales tristique, augue mauris molestie augue non feugiat ligula neque nec felis.
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+
+      <div class="card">
+        <span>12+</span>
+        <h3>Years of XP</h3>
+      </div>
+
+      <div class="card">
+        <span>250K+</span>
+        <h3>Products Sold</h3>
+      </div>
+
+      <div class="card">
+        <span>1.4M+</span>
+        <h3>Monthly Users</h3>
+      </div>
+
+    </div>
+
+
+    <!-- Quote -->
+    <div class="quote">
+      <p>
+        “Suspendisse neque erat, imperdiet ac non, sollicitudin accumsan lacus. Vestibulum ac ex rutrum, pellentesque purus et, lacinia mi. Nullam maximus lectus libero.”
+      </p>
+      <span>
+        John Smith - Divi Corner
+      </span>
+    </div>
+
+    <!-- Footer -->
     <footer class="footer_container">
         <%- include('./partials/footer') %>
     </footer>
