@@ -46,10 +46,16 @@
     .about .bottom{
         flex-direction: column;
         text-align: center;
+        align-items: center;
     }
 
     /* Stats */
     .stats{
         flex-direction: column;
+    }
+
+    /* Quote */
+    .quote p{
+        width: 80%;
     }
 }
